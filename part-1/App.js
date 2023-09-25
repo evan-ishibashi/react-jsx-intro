@@ -1,3 +1,7 @@
 function App() {
-  return <FirstComponent />;
+  return (<div>
+    <FirstComponent />
+    <NamedComponent name="colt" />
+
+    </div>)
 }
