@@ -12,16 +12,17 @@
 
 function Pokecard({ id, name, type, base_experience }) {
   return (
-    <div>
-      <h1> {name} </h1>
+    <div className="Pokecard">
+      <h1 className="Pokecard-name"> {name} </h1>
       <br />
-      <img src=
+      <img className="Pokecard-img" src=
         {`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
       />
       <br />
-      <p>Type: {type}</p>
-      <br />
-      <p>EXP: {base_experience}</p>
+      <p className="Pokecard-text">
+      Type: {type} <br />
+      EXP: {base_experience}
+      </p>
     </div>);
 }
 

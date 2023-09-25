@@ -1,4 +1,5 @@
 import Pokedex from './Pokedex';
+import './App.css';
 
 const POKEMON_LIST = [
   { id: 4, name: 'Charmander', type: 'fire', base_experience: 62 },
@@ -15,7 +16,12 @@ const POKEMON_LIST = [
  *
  */
 function App() {
-  return <Pokedex pokemonList={POKEMON_LIST} />;
+  return <div>
+    <h1 className="Pokecard-header">Pokedex</h1>
+  <div className="Pokecard-container">
+    <Pokedex pokemonList={POKEMON_LIST} />
+    </div>
+  </div>
 }
 
 export default App;
