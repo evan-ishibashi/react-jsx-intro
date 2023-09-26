@@ -1,4 +1,4 @@
-import Pokedex from './Pokedex';
+import Pokegame from './Pokegame';
 import './App.css';
 
 const POKEMON_LIST = [
@@ -16,12 +16,7 @@ const POKEMON_LIST = [
  *
  */
 function App() {
-  return <div>
-    <h1 className="Pokecard-header">Pokedex</h1>
-  <div className="Pokecard-container">
-    <Pokedex pokemonList={POKEMON_LIST} />
-    </div>
-  </div>
+  return <Pokegame pokemonList={POKEMON_LIST} />;
 }
 
 export default App;

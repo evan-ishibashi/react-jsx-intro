@@ -6,8 +6,7 @@
  * TODO: List props in docstring
  *
  * Returns a rendering of the information, including the Pokemon's name, image,
- * type, and experience level
- *TODO: add css file, style cards
+ *
  */
 
 function Pokecard({ id, name, type, base_experience }) {
@@ -20,8 +19,8 @@ function Pokecard({ id, name, type, base_experience }) {
       />
       <br />
       <p className="Pokecard-text">
-      Type: {type} <br />
-      EXP: {base_experience}
+        Type: {type} <br />
+        EXP: {base_experience}
       </p>
     </div>);
 }
